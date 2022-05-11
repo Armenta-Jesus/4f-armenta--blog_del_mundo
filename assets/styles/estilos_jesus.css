@@ -2,9 +2,12 @@
 
 * {box-sizing: border-box;}
 
-body {
+body { 
     background-color: rgb(0, 0, 0);
     color: #fff;
+margin: 0px;
+
+
 }
 article {
     background-color: rgb(44,43,43);
@@ -18,20 +21,39 @@ article {
 
 .resaltado {color: yellow;}
 
-#titulo_del_vlog {text-align: center; font-size: 3rem;}
+#titulo_del_vlog {text-align: center; font-size: 3rem; color: goldenrod; margin-top: 20vh;
+
+    font-size: clamp(2rem, 1%+2rem, 7rem);
+
+
+}
 
 nav>ul>li {
     list-style: none;
    }
    
-   nav>ul>li>a {text-decoration: none;}
-
+   nav>ul>li>a {text-decoration: none; color: red;}
+   nav>ul>li>a:hover{color:purple; text-decoration: underline;}
 
 /* fin barra de navegación */
 
 /* footer del blog */
+#footer_vlog {flex-direction: column;}
 
-#footer_vlog {margin: 2rem;}
+@media (max-width:1024.1px) {
+
+
+#footer_vlog {margin: 2rem;
+display: flex; 
+align-items: center;
+justify-content: space-between;
+
+
+}
+} 
+#footer_vlog:nth-child(2) {font-size: 0.9rem;}
+
+
 
 /* fin del footer del blog */
 
@@ -88,9 +110,9 @@ section{
             height:80px ;
         }
     
-        nav{
-            font-size: 1.3rem;   
-         }
+        
+       
+         
 
          nav{
             font-size: 1.3rem;
